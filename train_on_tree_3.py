@@ -93,7 +93,7 @@ def train_one_epoch(model, optimizer, train_dataloader):
         losses.backward()
         optimizer.step()
     return total_loss/len(train_dataloader)
-num_epochs = 1
+num_epochs = 50
 
 for epoch in range(num_epochs):
     print("start train")
